@@ -4,8 +4,11 @@
 
 ### News Malayalam: A one-stop to read Malayalam Newspapers!
 
-## About News Malayalam
-* News Malayalam is a simple and very basic web-based application allowing users to quickly select and read a number of popular Malayalam Newspapers. This app doesn\'t have any Ads or trackers included. The Ads shown (if any) on this app are directly from the respective publishers. Moreover, no personal or private information about you or your device is collected or transmitted by this app.\n\nPlease note that this application has nothing to do with the contents of the news. They are simply loaded from the official web-page of the news publishers. The respective publishers deserve all the credits!
+## Features
+* Quickly select and read a number of popular Malayalam Newspapers (Credits: various publishers).
+* No Ads or trackers included (except the one from the respective publishers).
+* No personal or private information about the users is collected.
+* Elegantly designed user interface with an auto-dark/light theme.
 
 ## Donations
 If you like to appreciate my work, please consider donating to me (either via [Liberapay](https://liberapay.com/sunilpaulmathew/donate), [PayPal](https://www.paypal.me/menacherry/), [Ko-fi](https://ko-fi.com/sunilpaulmathew/), or by purchasing the [SmartPack Donation Package](https://play.google.com/store/apps/details?id=com.smartpack.donate) from playstore) as it is helpful to continue my projects more active, although it is not at all necessary.
@@ -22,9 +25,6 @@ If you like to appreciate my work, please consider donating to me (either via [L
 [<img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png"
      alt=""
      height="80">](https://play.google.com/store/apps/details?id=com.smartpack.donate)
-
-## Credits
-* [topjohnwu](https://github.com/topjohnwu), libsu
 
 ## License
 
