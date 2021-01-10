@@ -90,9 +90,6 @@ public class StartActivity extends AppCompatActivity {
                         .equals(data.get(position).getUrl())) {
                     holder.mTitle.setTextColor(holder.mTitle.getContext().getResources().getColor(R.color.black));
                     holder.mCard.setCardBackgroundColor(holder.mTitle.getContext().getResources().getColor(R.color.blue));
-                } else {
-                    holder.mTitle.setTextColor(holder.mTitle.getContext().getResources().getColor(R.color.blue));
-                    holder.mCard.setCardBackgroundColor(holder.mTitle.getContext().getResources().getColor(R.color.black));
                 }
             } catch (NullPointerException ignored) {}
         }
