@@ -1,9 +1,11 @@
 package com.sunilpaulmathew.newsmalayalam;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.sunilpaulmathew.newsmalayalam.activities.StartActivity;
 import com.sunilpaulmathew.newsmalayalam.fragments.NewsFragment;
 import com.sunilpaulmathew.newsmalayalam.utils.Utils;
 
@@ -20,7 +22,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                new NewsFragment()).commit();
+        if (Utils.getString("home_page", null, this) == null) {
+            Intent setDefault = new Intent(this, StartActivity.class);
+            startActivity(setDefault);
+            finish();
+        } else {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                    new NewsFragment()).commit();
+        }
     }
+
 }

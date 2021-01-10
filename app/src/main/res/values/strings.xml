@@ -6,6 +6,7 @@
     <string name="app_description">News Malayalam is a simple and very basic web-based application allowing users to quickly select and read a number of popular Malayalam Newspapers. This app doesn\'t have any Ads or trackers included. The Ads shown (if any) on this app are directly from the respective publishers. Moreover, no personal or private information about you or your device is collected or transmitted by this app.\n\nPlease note that this application has nothing to do with the contents of the news. They are simply loaded from the official web-page of the news publishers. The respective publishers deserve all the credits!</string>
     <string name="asianet">Asianet</string>
     <string name="cancel">Cancel</string>
+    <string name="default_page_message">Please select the default Newspaper you like to load when you open this app. It will be later changed to the last one you read.</string>
     <string name="indian_express">Indian Express (Malayalam)</string>
     <string name="madhyamam">Madhyamam</string>
     <string name="malayala_manorama">Malayala Manorama</string>

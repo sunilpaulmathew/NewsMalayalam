@@ -24,5 +24,6 @@
         </activity>
 
         <activity android:name=".activities.AboutActivity" />
+        <activity android:name=".activities.StartActivity" />
     </application>
 </manifest>

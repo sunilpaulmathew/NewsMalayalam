@@ -33,15 +33,6 @@ public class Utils {
         }
     }
 
-    public static void launchUrl(String url, Context context) {
-        try {
-            Intent i = new Intent(Intent.ACTION_VIEW);
-            i.setData(Uri.parse(url));
-            context.startActivity(i);
-        } catch (ActivityNotFoundException ignored) {
-        }
-    }
-
     public static String getString(String name, String defaults, Context context) {
         return PreferenceManager.getDefaultSharedPreferences(context).getString(name, defaults);
     }
