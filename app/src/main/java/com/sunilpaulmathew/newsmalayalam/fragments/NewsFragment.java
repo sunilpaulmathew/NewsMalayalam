@@ -8,10 +8,12 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 
 import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.Nullable;
@@ -53,6 +55,7 @@ public class NewsFragment extends Fragment {
         MaterialCardView mBack = mRootView.findViewById(R.id.back_button);
         MaterialCardView mHome = mRootView.findViewById(R.id.home_button);
         MaterialCardView mForward = mRootView.findViewById(R.id.forward_button);
+        ProgressBar mProgress = mRootView.findViewById(R.id.progress);
         mWebView = mRootView.findViewById(R.id.webview);
 
         WebSettings mWebSettings = mWebView.getSettings();
@@ -68,6 +71,12 @@ public class NewsFragment extends Fragment {
             mUrlHome = Utils.getString("home_page", null, getActivity());
             mUrl = Utils.getString("home_page", null, getActivity());
         }
+
+        mWebView.setWebChromeClient(new WebChromeClient() {
+            public void onProgressChanged(WebView view, int progress) {
+                mProgress.setProgress(progress);
+            }
+        });
 
         mWebView.setWebViewClient(new WebViewClient() {
             public void onPageFinished(WebView view, String url) {

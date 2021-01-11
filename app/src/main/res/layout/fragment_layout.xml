@@ -181,11 +181,11 @@
             android:paddingTop="10dp" />
 
         <ProgressBar
+            android:id="@+id/progress"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             style="?android:attr/progressBarStyleHorizontal"
             android:backgroundTint="@color/blue"
-            android:indeterminate="true"
             android:padding="5dp" />
     </LinearLayout>
 </RelativeLayout>
