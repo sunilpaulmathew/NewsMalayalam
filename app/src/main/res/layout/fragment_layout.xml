@@ -17,12 +17,23 @@
             android:layout_height="50dp"
             android:gravity="top|center_vertical"
             android:background="@color/black"
+            android:layout_gravity="center"
             android:padding="10dp" >
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/navigation_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:src="@drawable/ic_navigation"
+                android:background="@color/black"
+                android:tint="@color/blue" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
+                android:gravity="center"
+                android:layout_marginStart="40dp"
                 android:text="@string/app_name"
                 android:textColor="@color/blue"
                 android:layout_gravity="start"
@@ -157,6 +168,22 @@
                 android:clickable="false" />
         </com.google.android.material.card.MaterialCardView>
     </FrameLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/navigation_card"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="start"
+        app:cardCornerRadius="5dp"
+        android:visibility="gone" >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.google.android.material.card.MaterialCardView>
 
     <LinearLayout
         android:id="@+id/splash_screen"
