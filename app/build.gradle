@@ -19,7 +19,7 @@ android {
         minSdkVersion 23
         targetSdkVersion 30
         versionCode 1
-        versionName "alpha-v0.1"
+        versionName "v0.1"
         vectorDrawables.useSupportLibrary = true
         signingConfig signingConfigs.release
         testFunctionalTest = false
