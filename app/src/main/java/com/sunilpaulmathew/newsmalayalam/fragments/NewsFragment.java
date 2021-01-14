@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.LayoutInflater;
-import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebChromeClient;
@@ -18,7 +17,6 @@ import android.widget.ProgressBar;
 import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatImageButton;
-import androidx.appcompat.widget.PopupMenu;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -26,7 +24,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.card.MaterialCardView;
 import com.sunilpaulmathew.newsmalayalam.BuildConfig;
 import com.sunilpaulmathew.newsmalayalam.R;
-import com.sunilpaulmathew.newsmalayalam.activities.AboutActivity;
+import com.sunilpaulmathew.newsmalayalam.activities.SettingsActivity;
 import com.sunilpaulmathew.newsmalayalam.adapters.RecycleViewAdapter;
 import com.sunilpaulmathew.newsmalayalam.adapters.RecycleViewItem;
 import com.sunilpaulmathew.newsmalayalam.utils.Utils;
@@ -57,7 +55,6 @@ public class NewsFragment extends Fragment {
         mSplashScreen = mRootView.findViewById(R.id.splash_screen);
         AppCompatImageButton mNavigation = mRootView.findViewById(R.id.navigation_button);
         AppCompatImageButton mMenu = mRootView.findViewById(R.id.menu_button);
-        AppCompatImageButton mInfo = mRootView.findViewById(R.id.info_button);
         mShare = mRootView.findViewById(R.id.share_button);
         MaterialCardView mBack = mRootView.findViewById(R.id.back_button);
         MaterialCardView mNavigationCard = mRootView.findViewById(R.id.navigation_card);
@@ -134,6 +131,15 @@ public class NewsFragment extends Fragment {
             }
         });
 
+        mMenu.setOnClickListener(v -> {
+            if (mNavigationCard.getVisibility() == View.VISIBLE) {
+                mNavigationCard.setVisibility(View.GONE);
+                return;
+            }
+            Intent settingsMenu = new Intent(requireActivity(), SettingsActivity.class);
+            startActivity(settingsMenu);
+        });
+
         mShare.setOnClickListener(v -> {
             if (mNavigationCard.getVisibility() == View.VISIBLE) {
                 mNavigationCard.setVisibility(View.GONE);
@@ -177,15 +183,6 @@ public class NewsFragment extends Fragment {
             if (mWebView.canGoForward()) {
                 mWebView.goForward();
             }
-        });
-
-        mInfo.setOnClickListener(v -> {
-            if (mNavigationCard.getVisibility() == View.VISIBLE) {
-                mNavigationCard.setVisibility(View.GONE);
-                return;
-            }
-            Intent about = new Intent(requireActivity(), AboutActivity.class);
-            startActivity(about);
         });
 
         requireActivity().getOnBackPressedDispatcher().addCallback(new OnBackPressedCallback(true) {

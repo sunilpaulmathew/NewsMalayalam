@@ -1,7 +1,6 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string name="app_name">News Malayalam</string>
 
-    <string name="about">About</string>
     <string name="about_summary">A one-stop to read Malayalam Newspapers!</string>
     <string name="app_description">News Malayalam is a simple and very basic web-based application allowing users to quickly select and read a number of popular Malayalam Newspapers. This app doesn\'t have any Ads or trackers included. The Ads shown (if any) on this app are directly from the respective publishers. Moreover, no personal or private information about you or your device is collected or transmitted by this app.\n\nPlease note that this application has nothing to do with the contents of the news. They are simply loaded from the official web-page of the news publishers. The respective publishers deserve all the credits!</string>
     <string name="asianet">Asianet</string>
@@ -16,14 +15,20 @@
     <string name="deepika">Deepika</string>
     <string name="deshabhimani">Deshabhimani</string>
     <string name="dismiss">Dismiss</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="invite_friends_Summary">Invite your friends to try News Malayalam</string>
     <string name="loading">Loading …</string>
     <string name="press_back">Press back again to exit</string>
-    <string name="rate_us">Rate Us</string>
+    <string name="rate_us">Rate News Malayalam</string>
+    <string name="rate_us_Summary">Rate or/and Review News Malayalam in PlayStore</string>
     <string name="report_issue">Report an Issue</string>
+    <string name="report_issue_summary">Found some bugs in News Malayalam? Click here to raise an issue at GitHub!</string>
+    <string name="settings">Settings</string>
     <string name="share">Share</string>
     <string name="share_with">Share With</string>
     <string name="shared_by_message">Get News Malayalam %s, a one-stop to read Malayalam Newspapers, from PlayStore: https://play.google.com/store/apps/details?id=com.sunilpaulmathew.newsmalayalam</string>
     <string name="source_code">Source Code</string>
+    <string name="source_code_summary">News Malayalam is an open-source application which is ready to accept contributions from the development community. Click here to check out the source code!</string>
     <string name="support_development">Support Development</string>
     <string name="support_development_summary">If you like to appreciate the efforts of the developer to provide this application entirely free, non-intrusive and without ads, please consider supporting the development in some way. Click here to know more. Thank you!</string>
     <string name="twenty_four">Twenty Four</string>

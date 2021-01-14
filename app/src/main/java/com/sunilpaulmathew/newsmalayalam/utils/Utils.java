@@ -7,11 +7,13 @@ import android.content.Intent;
 import android.content.res.Configuration;
 import android.net.Uri;
 import android.preference.PreferenceManager;
+import android.provider.Settings;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatDelegate;
 
 import com.google.android.material.snackbar.Snackbar;
+import com.sunilpaulmathew.newsmalayalam.BuildConfig;
 import com.sunilpaulmathew.newsmalayalam.R;
 
 /*
@@ -20,7 +22,7 @@ import com.sunilpaulmathew.newsmalayalam.R;
 
 public class Utils {
 
-    private static boolean isDarkTheme(Context context) {
+    public static boolean isDarkTheme(Context context) {
         int currentNightMode = context.getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;
         return currentNightMode == Configuration.UI_MODE_NIGHT_YES;
     }
@@ -55,6 +57,15 @@ public class Utils {
         } catch (ActivityNotFoundException e) {
             e.printStackTrace();
         }
+    }
+
+    public static void goToSettings(Activity activity) {
+        Intent settings = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+        settings.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        Uri uri = Uri.fromParts("package", BuildConfig.APPLICATION_ID, null);
+        settings.setData(uri);
+        activity.startActivity(settings);
+        activity.finish();
     }
 
 }
