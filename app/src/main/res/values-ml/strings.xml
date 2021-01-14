@@ -1,0 +1,34 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <!--Created by The Translator <https://play.google.com/store/apps/details?id=com.sunilpaulmathew.translator>-->
+
+    <string name="app_name">ന്യൂസ് മലയാളം</string>
+    <string name="about_summary">മലയാള ദിനപത്രങ്ങൾ വായിക്കാൻ ഉള്ള സ്ഥലം!</string>
+    <string name="app_description">ലളിതവും അടിസ്ഥാനപരവുമായ വെബ് അധിഷ്ഠിത ആപ്ലിക്കേഷനായ ന്യൂസ് മലയാളം ജനപ്രിയമായ നിരവധി മലയാള ദിനപത്രങ്ങൾ വേഗത്തിൽ തിരഞ്ഞെടുക്കാനും വായിക്കാനും ഉപയോക്താക്കളെ സഹായിക്കുന്നു. ഈ അപ്ലിക്കേഷനിൽ കാണിച്ചിരിക്കുന്ന പരസ്യങ്ങൾ (എന്തെങ്കിലുമുണ്ടെങ്കിൽ) ബന്ധപ്പെട്ട പ്രസാധകരിൽ നിന്നുള്ളതാണ്. മാത്രമല്ല നിങ്ങളെക്കുറിച്ചോ നിങ്ങളുടെ ഉപകരണത്തെക്കുറിച്ചോ വ്യക്തിപരമോ സ്വകാര്യമോ ആയ വിവരങ്ങളൊന്നും ഈ അപ്ലിക്കേഷൻ ശേഖരിക്കുകയോ കൈമാറുകയോ ചെയ്യുന്നില്ല.\n\nഈ അപ്ലിക്കേഷന് വാർത്തയുടെ ഉള്ളടക്കവുമായി യാതൊരു വിധ ബന്ധവുമില്ലെന്നത് ദയവായി മനസ്സിലാക്കുക. വാർത്തകൾ പ്രസാധകരുടെ ഔദ്യോഗിക വെബ്പേജിൽനിന്നും സ്വീകരിക്കുന്നവയാണ്. ബന്ധപ്പെട്ട പ്രസാധകർ എല്ലാ ക്രെഡിറ്റുകളും അർഹിക്കുന്നു!</string>
+    <string name="asianet">ഏഷ്യാനെറ്റ്</string>
+    <string name="cancel">റദ്ദാക്കുക</string>
+    <string name="default_page_message">നിങ്ങൾ ആദ്യമായി വായിക്കാൻ ആഗ്രഹിക്കുന്ന ദിനപത്രം തിരഞ്ഞെടുക്കുക. ഇത് പിന്നീട് നിങ്ങൾ വായിച്ച അവസാനത്തേതിലേക്ക് മാറ്റപ്പെടുന്നതാണ്.</string>
+    <string name="indian_express">ഇന്ത്യൻ എക്സ്പ്രസ്സ്</string>
+    <string name="invite_friends">സുഹൃത്തുക്കളെ ക്ഷണിക്കുക</string>
+    <string name="invite_friends_Summary">ന്യൂസ് മലയാളം ഉപയോഗിക്കാൻ നിങ്ങളുടെ സുഹൃത്തുക്കളെ ക്ഷണിക്കുക</string>
+    <string name="madhyamam">മാധ്യമം</string>
+    <string name="malayala_manorama">മലയാള മനോരമ</string>
+    <string name="mathrubhumi">മാതൃഭൂമി</string>
+    <string name="mangalam">മംഗളം</string>
+    <string name="media_one">മീഡിയ വൺ</string>
+    <string name="deepika">ദീപിക</string>
+    <string name="deshabhimani">ദേശാഭിമാനി</string>
+    <string name="dismiss">നിരസിക്കുക</string>
+    <string name="loading">ലോഡ് ചെയ്യുന്നു …</string>
+    <string name="press_back">ബാക്ക് ബട്ടൺ വീണ്ടും അമർത്തുക!</string>
+    <string name="rate_us">റേറ്റ് ന്യൂസ് മലയാളം</string>
+    <string name="rate_us_Summary">പ്ലേസ്റ്റോറിലെ ന്യൂസ് മലയാളം റേറ്റ് ചെയ്യുക / കൂടാതെ അവലോകനം ചെയ്യുക</string>
+    <string name="report_issue">പ്രശ്നങ്ങൾ റിപ്പോർട്ട് ചെയ്യുക</string>
+    <string name="report_issue_summary">ന്യൂസ് മലയാളത്തിൽ ചില ബഗുകൾ കണ്ടെത്തിയോ? GitHub-ൽ ഒരു പ്രശ്നം ഉന്നയിക്കാൻ ഇവിടെ ക്ലിക്കുചെയ്യുക!</string>
+    <string name="settings">ക്രമീകരണങ്ങൾ</string>
+    <string name="shared_by_message">ന്യൂസ് മലയാളം %s പ്ലേസ്റ്റോറിൽ ലഭ്യമാണ്: https://play.google.com/store/apps/details?id=com.sunilpaulmathew.newsmalayalam</string>
+    <string name="source_code">സോഴ്സ് കോഡ്</string>
+    <string name="source_code_summary">ആൻഡ്രോയിഡ് ഡെവലപ്‌മെന്റ് കമ്മ്യൂണിറ്റിയിൽ നിന്നുള്ള സംഭാവനകൾ സ്വീകരിക്കാൻ തയ്യാറായ ഒരു ഓപ്പൺ സോഴ്‌സ് അപ്ലിക്കേഷനാണ് ന്യൂസ് മലയാളം. സോഴ്സ് കോഡ് പരിശോധിക്കാൻ ഇവിടെ ക്ലിക്കുചെയ്യുക!</string>
+    <string name="support_development">ഡെവലപ്പറെ സഹായിക്കുക</string>
+    <string name="support_development_summary">ഈ ആപ്ലിക്കേഷൻ പൂർണ്ണമായും സജന്യവും പരസ്യങ്ങളില്ലാത്തതുമായി നൽകുവാൻ ഡെവലപ്പറെ സഹായിക്കുവാൻ നിങ്ങൾ ആഗ്രഹിക്കുന്നുവെങ്കിൽ, ഏതെങ്കിലും വിധത്തിൽ വികസനത്തെ പിന്തുണയ്ക്കുന്നത് പരിഗണിക്കുക. കൂടുതലറിയാൻ ഇവിടെ ക്ലിക്കുചെയ്യുക. നന്ദി!</string>
+    <string name="twenty_four">ട്വൻ്റി ഫോർ</string>
+</resources>
