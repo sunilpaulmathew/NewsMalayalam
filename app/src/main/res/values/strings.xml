@@ -39,7 +39,7 @@
     <string name="support_meal">Buy me a Meal</string>
     <string name="support_coffee">Buy me a Coffee</string>
     <string name="support_already_received_message">You\'re already supported the development with this item before!</string>
-    <string name="support_received_message">Thank you very much for your support \u2665\nIt will motivate me a lot to continue my projects more active! Moreover, you\'ll receive a supporter badge on the top of this page.</string>
+    <string name="support_received_message">Thank you very much for your support \u2665 \nIt will motivate me a lot to continue my projects more active! Moreover, you\'ll receive a supporter badge on the top of this page.</string>
     <string name="support_retry_message">Please try purchasing again!</string>
     <string name="support_status_message">Thank you very much for your support!</string>
     <string name="twenty_four">Twenty Four</string>
