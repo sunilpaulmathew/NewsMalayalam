@@ -4,7 +4,9 @@
     <string name="about_summary">A one-stop to read Malayalam Newspapers!</string>
     <string name="app_description">News Malayalam is a simple and very basic web-based application allowing users to quickly select and read a number of popular Malayalam Newspapers. This app doesn\'t have any Ads or trackers included. The Ads shown (if any) on this app are directly from the respective publishers. Moreover, no personal or private information about you or your device is collected or transmitted by this app.\n\nPlease note that this application has nothing to do with the contents of the news. They are simply loaded from the official web-page of the news publishers. The respective publishers deserve all the credits!</string>
     <string name="asianet">Asianet</string>
+    <string name="billing_client_disconnected">Failed to connect with Google Play Billing client!</string>
     <string name="cancel">Cancel</string>
+    <string name="donation_app">Buy Donation App</string>
     <string name="default_page_message">Please select the first Newspaper you like to read on this app. It will be later changed to the last one you read.</string>
     <string name="deepika">Deepika</string>
     <string name="deshabhimani">Deshabhimani</string>
@@ -29,7 +31,16 @@
     <string name="shared_by_message">Get News Malayalam %s, a one-stop to read Malayalam Newspapers, from GooglePlay: https://play.google.com/store/apps/details?id=com.sunilpaulmathew.newsmalayalam</string>
     <string name="source_code">Source Code</string>
     <string name="source_code_summary">News Malayalam is an open-source application which is ready to accept contributions from the development community. Click here to check out the source code!</string>
+    <string name="support_acknowledged">Donation Acknowledged \u2665</string>
     <string name="support_development">Support Development</string>
+    <string name="support_development_message">Please Note: Buying any of this product will award you a supporter badge here!</string>
     <string name="support_development_summary">If you like to appreciate the efforts of the developer to provide this application entirely free, non-intrusive and without ads, please consider supporting the development in some way. Click here to know more. Thank you!</string>
+    <string name="support_dinner">Buy me a Dinner</string>
+    <string name="support_meal">Buy me a Meal</string>
+    <string name="support_coffee">Buy me a Coffee</string>
+    <string name="support_already_received_message">You\'re already supported the development with this item before!</string>
+    <string name="support_received_message">Thank you very much for your support \u2665\nIt will motivate me a lot to continue my projects more active! Moreover, you\'ll receive a supporter badge on the top of this page.</string>
+    <string name="support_retry_message">Please try purchasing again!</string>
+    <string name="support_status_message">Thank you very much for your support!</string>
     <string name="twenty_four">Twenty Four</string>
 </resources>

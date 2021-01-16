@@ -47,7 +47,9 @@ public class SettingsActivity extends AppCompatActivity {
         MaterialTextView mAppDescription = findViewById(R.id.description);
         RecyclerView mRecyclerView = findViewById(R.id.recycler_view);
 
-        mAppTitle.setText(getString(R.string.app_name) + " " + BuildConfig.VERSION_NAME);
+        boolean isProUser = Utils.getBoolean("support_received", false, this) || Utils.isDonated(this);
+
+        mAppTitle.setText(getString(R.string.app_name) + (isProUser ? " Pro " : " ") + BuildConfig.VERSION_NAME);
         mAppTitle.setTextColor(Utils.isDarkTheme(this) ? Color.WHITE : Color.BLACK);
         mAppDescription.setText(getString(R.string.about_summary));
 
@@ -69,7 +71,8 @@ public class SettingsActivity extends AppCompatActivity {
             if (position == 0) {
                 Utils.goToSettings(this);
             } else if (position == 1) {
-                Utils.launchURL("https://smartpack.github.io/donation/", this);
+                Intent billing = new Intent(this, BillingActivity.class);
+                startActivity(billing);
             } else if (position == 2) {
                 Intent share_app = new Intent();
                 share_app.setAction(Intent.ACTION_SEND);

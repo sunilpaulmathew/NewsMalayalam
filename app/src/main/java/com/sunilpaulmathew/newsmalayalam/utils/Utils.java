@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.net.Uri;
 import android.preference.PreferenceManager;
@@ -22,6 +23,15 @@ import com.sunilpaulmathew.newsmalayalam.R;
 
 public class Utils {
 
+    public static boolean isDonated(Context context) {
+        try {
+            context.getPackageManager().getApplicationInfo("com.smartpack.donate", 0);
+            return true;
+        } catch (PackageManager.NameNotFoundException ignored) {
+            return false;
+        }
+    }
+
     public static boolean isDarkTheme(Context context) {
         int currentNightMode = context.getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;
         return currentNightMode == Configuration.UI_MODE_NIGHT_YES;
@@ -33,6 +43,14 @@ public class Utils {
         } else {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         }
+    }
+
+    public static boolean getBoolean(String name, boolean defaults, Context context) {
+        return PreferenceManager.getDefaultSharedPreferences(context).getBoolean(name, defaults);
+    }
+
+    public static void saveBoolean(String name, boolean value, Context context) {
+        PreferenceManager.getDefaultSharedPreferences(context).edit().putBoolean(name, value).apply();
     }
 
     public static String getString(String name, String defaults, Context context) {
