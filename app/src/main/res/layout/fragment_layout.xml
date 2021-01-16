@@ -96,74 +96,10 @@
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_margin="10dp"
-        android:gravity="center" >
-
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/back_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:cardBackgroundColor="@color/blue"
-            android:layout_gravity="start"
-            app:cardCornerRadius="10dp" >
-
-            <androidx.appcompat.widget.AppCompatImageButton
-                android:layout_width="40dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:src="@drawable/ic_arrow"
-                android:rotation="180"
-                android:background="@color/black"
-                android:tint="@color/blue"
-                android:clickable="false" />
-        </com.google.android.material.card.MaterialCardView>
-
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/home_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:cardBackgroundColor="@color/blue"
-            android:layout_gravity="center"
-            app:cardCornerRadius="10dp" >
-
-            <androidx.appcompat.widget.AppCompatImageButton
-                android:layout_width="40dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:src="@drawable/ic_home"
-                android:background="@color/black"
-                android:tint="@color/blue"
-                android:clickable="false" />
-        </com.google.android.material.card.MaterialCardView>
-
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/forward_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:cardBackgroundColor="@color/blue"
-            android:layout_gravity="end"
-            app:cardCornerRadius="10dp" >
-
-            <androidx.appcompat.widget.AppCompatImageButton
-                android:layout_width="40dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:src="@drawable/ic_arrow"
-                android:background="@color/black"
-                android:tint="@color/blue"
-                android:clickable="false" />
-        </com.google.android.material.card.MaterialCardView>
-    </FrameLayout>
-
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/navigation_card"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
+        android:layout_height="match_parent"
         android:layout_marginTop="50dp"
         android:layout_gravity="start"
         app:cardCornerRadius="5dp"

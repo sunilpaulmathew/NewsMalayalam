@@ -30,7 +30,6 @@ import com.sunilpaulmathew.newsmalayalam.adapters.RecycleViewItem;
 import com.sunilpaulmathew.newsmalayalam.utils.Utils;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
 /*
  * Created by sunilpaulmathew <sunil.kde@gmail.com> on January 08, 2020
@@ -43,7 +42,7 @@ public class NewsFragment extends Fragment {
     private Handler mHandler = new Handler();
     private LinearLayout mSplashScreen;
     private MaterialCardView mShare;
-    private String mUrl = null, mUrlHome = null;
+    private String mUrl = null;
     private View mRootView;
     private WebView mWebView;
 
@@ -56,10 +55,7 @@ public class NewsFragment extends Fragment {
         AppCompatImageButton mNavigation = mRootView.findViewById(R.id.navigation_button);
         AppCompatImageButton mMenu = mRootView.findViewById(R.id.menu_button);
         mShare = mRootView.findViewById(R.id.share_button);
-        MaterialCardView mBack = mRootView.findViewById(R.id.back_button);
         MaterialCardView mNavigationCard = mRootView.findViewById(R.id.navigation_card);
-        MaterialCardView mHome = mRootView.findViewById(R.id.home_button);
-        MaterialCardView mForward = mRootView.findViewById(R.id.forward_button);
         ProgressBar mProgress = mRootView.findViewById(R.id.progress);
         mWebView = mRootView.findViewById(R.id.webview);
         RecyclerView mRecyclerView = mRootView.findViewById(R.id.recycler_view);
@@ -75,7 +71,6 @@ public class NewsFragment extends Fragment {
             Utils.saveString("home_page", "https://www.mathrubhumi.com/mobile/", getActivity());
         }
         if (mUrl == null || mUrl.isEmpty()) {
-            mUrlHome = Utils.getString("home_page", null, getActivity());
             mUrl = Utils.getString("home_page", null, getActivity());
         }
 
@@ -155,37 +150,6 @@ public class NewsFragment extends Fragment {
             startActivity(shareIntent);
         });
 
-        mBack.setOnClickListener(v -> {
-            if (mNavigationCard.getVisibility() == View.VISIBLE) {
-                mNavigationCard.setVisibility(View.GONE);
-                return;
-            }
-            if (mWebView.canGoBack()) {
-                mWebView.goBack();
-            }
-        });
-
-        mHome.setOnClickListener(v -> {
-            if (mNavigationCard.getVisibility() == View.VISIBLE) {
-                mNavigationCard.setVisibility(View.GONE);
-                return;
-            }
-            if (!Objects.equals(mWebView.getUrl(), mUrlHome)) {
-                mUrl = mUrlHome;
-                mWebView.loadUrl(mUrl);
-            }
-        });
-
-        mForward.setOnClickListener(v -> {
-            if (mNavigationCard.getVisibility() == View.VISIBLE) {
-                mNavigationCard.setVisibility(View.GONE);
-                return;
-            }
-            if (mWebView.canGoForward()) {
-                mWebView.goForward();
-            }
-        });
-
         requireActivity().getOnBackPressedDispatcher().addCallback(new OnBackPressedCallback(true) {
             @Override
             public void handleOnBackPressed() {
@@ -211,7 +175,6 @@ public class NewsFragment extends Fragment {
     private void reloadPage(String url) {
         if (url.equals(mWebView.getUrl())) return;
         mUrl = url;
-        mUrlHome = url;
         Utils.saveString("home_page", url, requireActivity());
         mShare.setVisibility(View.GONE);
         mSplashScreen.setVisibility(View.VISIBLE);
