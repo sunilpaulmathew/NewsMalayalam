@@ -44,7 +44,7 @@ public class StartActivity extends AppCompatActivity {
         mData.add(new RecycleViewItem(getString(R.string.deshabhimani), "https://www.deshabhimani.com/"));
         mData.add(new RecycleViewItem(getString(R.string.indian_express), "https://malayalam.indianexpress.com/"));
         mData.add(new RecycleViewItem(getString(R.string.madhyamam), "https://www.madhyamam.com/"));
-        mData.add(new RecycleViewItem(getString(R.string.malayala_manorama), "https://www.manoramaonline.com/"));
+        mData.add(new RecycleViewItem(getString(R.string.malayala_manorama), "https://www.manoramaonline.com/home.html"));
         mData.add(new RecycleViewItem(getString(R.string.mangalam), "https://www.mangalam.com/"));
         mData.add(new RecycleViewItem(getString(R.string.mathrubhumi), "https://www.mathrubhumi.com/mobile/"));
         mData.add(new RecycleViewItem(getString(R.string.media_one), "https://www.mediaonetv.in/"));

@@ -42,7 +42,12 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
             if (Utils.getString("home_page", null, holder.mTitle.getContext())
                     .equals(data.get(position).getUrl())) {
                 holder.mTitle.setTextColor(holder.mTitle.getContext().getResources().getColor(R.color.black));
-                holder.mCard.setCardBackgroundColor(holder.mTitle.getContext().getResources().getColor(R.color.blue));
+                holder.mCard.setCardBackgroundColor(holder.mCard.getContext().getResources().getColor(R.color.blue));
+            } else {
+                holder.mTitle.setTextColor(holder.mTitle.getContext().getResources().getColor(Utils.isDarkTheme(
+                        holder.mTitle.getContext()) ? R.color.white :R.color.black));
+                holder.mCard.setCardBackgroundColor(holder.mCard.getContext().getResources().getColor(Utils.isDarkTheme(
+                        holder.mCard.getContext()) ? R.color.black :R.color.white));
             }
         } catch (NullPointerException ignored) {
         }

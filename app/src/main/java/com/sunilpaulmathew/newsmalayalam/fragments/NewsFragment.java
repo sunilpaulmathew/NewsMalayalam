@@ -67,9 +67,6 @@ public class NewsFragment extends Fragment {
 
         mWebView.setWebViewClient(new WebViewClient());
 
-        if (Utils.getString("home_page", null, getActivity()) == null) {
-            Utils.saveString("home_page", "https://www.mathrubhumi.com/mobile/", getActivity());
-        }
         if (mUrl == null || mUrl.isEmpty()) {
             mUrl = Utils.getString("home_page", null, getActivity());
         }
@@ -107,15 +104,15 @@ public class NewsFragment extends Fragment {
         mData.add(new RecycleViewItem(getString(R.string.deshabhimani), "https://www.deshabhimani.com/"));
         mData.add(new RecycleViewItem(getString(R.string.indian_express), "https://malayalam.indianexpress.com/"));
         mData.add(new RecycleViewItem(getString(R.string.madhyamam), "https://www.madhyamam.com/"));
-        mData.add(new RecycleViewItem(getString(R.string.malayala_manorama), "https://www.manoramaonline.com/"));
+        mData.add(new RecycleViewItem(getString(R.string.malayala_manorama), "https://www.manoramaonline.com/home.html"));
         mData.add(new RecycleViewItem(getString(R.string.mangalam), "https://www.mangalam.com/"));
         mData.add(new RecycleViewItem(getString(R.string.mathrubhumi), "https://www.mathrubhumi.com/mobile/"));
         mData.add(new RecycleViewItem(getString(R.string.media_one), "https://www.mediaonetv.in/"));
         mData.add(new RecycleViewItem(getString(R.string.twenty_four), "https://www.twentyfournews.com/"));
 
         mRecycleViewAdapter.setOnItemClickListener((position, v) -> {
-            mRecycleViewAdapter.notifyDataSetChanged();
             reloadPage(mData.get(position).getUrl());
+            mRecycleViewAdapter.notifyDataSetChanged();
             mNavigationCard.setVisibility(View.GONE);
         });
 
