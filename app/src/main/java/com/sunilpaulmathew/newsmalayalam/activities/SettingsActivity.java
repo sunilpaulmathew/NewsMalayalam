@@ -84,7 +84,7 @@ public class SettingsActivity extends AppCompatActivity {
             } else if (position == 3) {
                 Utils.launchURL("https://github.com/sunilpaulmathew/NewsMalayalam/", this);
             } else if (position == 4) {
-                Utils.launchURL("https://play.google.com/store/apps/details?id=com.sunilpaulmathew.newsmalayalam/", this);
+                Utils.launchURL("https://play.google.com/store/apps/details?id=com.sunilpaulmathew.newsmalayalam", this);
             } else if (position == 5) {
                 Utils.launchURL("https://github.com/sunilpaulmathew/NewsMalayalam/issues/new/", this);
             }
