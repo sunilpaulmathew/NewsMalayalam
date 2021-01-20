@@ -1,14 +1,28 @@
 # News Malayalam
 
-![](app/src/main/ic_launcher-playstore.png)
+![](app/src/main/res/mipmap-xxxhdpi/ic_launcher.png)
+
+[![](https://img.shields.io/badge/News--Malayalam-v0.2-green)](https://play.google.com/store/apps/details?id=com.sunilpaulmathew.newsmalayalam)
+![](https://img.shields.io/github/languages/top/sunilpaulmathew/NewsMalayalam)
+![](https://img.shields.io/github/contributors/sunilpaulmathew/NewsMalayalam)
+![](https://img.shields.io/github/license/sunilpaulmathew/NewsMalayalam)
 
 ### News Malayalam: A one-stop to read Malayalam Newspapers!
+
+## Download
+[<img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png"
+     alt=""
+     height="80">](https://play.google.com/store/apps/details?id=com.sunilpaulmathew.newsmalayalam)
 
 ## Features
 * Quickly select and read a number of popular Malayalam Newspapers (Credits: various publishers).
 * No Ads or trackers included (except the one from the respective publishers).
 * No personal or private information about the users is collected.
 * Elegantly designed user interface with an auto-dark/light theme.
+
+## Report a bug or request a feature
+You can report a bug or request a feature by opening an issue at
+>     https://github.com/sunilpaulmathew/NewsMalayalam/issues/new
 
 ## License
 
