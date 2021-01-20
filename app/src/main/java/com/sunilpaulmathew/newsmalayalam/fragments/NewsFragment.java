@@ -20,6 +20,7 @@ import androidx.appcompat.widget.AppCompatImageButton;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.google.android.material.card.MaterialCardView;
 import com.sunilpaulmathew.newsmalayalam.BuildConfig;
@@ -58,6 +59,7 @@ public class NewsFragment extends Fragment {
         MaterialCardView mNavigationCard = mRootView.findViewById(R.id.navigation_card);
         ProgressBar mProgress = mRootView.findViewById(R.id.progress);
         mWebView = mRootView.findViewById(R.id.webview);
+        SwipeRefreshLayout mSwipeRefreshLayout = mRootView.findViewById(R.id.swipe_layout);
         RecyclerView mRecyclerView = mRootView.findViewById(R.id.recycler_view);
 
         WebSettings mWebSettings = mWebView.getSettings();
@@ -122,6 +124,15 @@ public class NewsFragment extends Fragment {
             } else {
                 mNavigationCard.setVisibility(View.VISIBLE);
             }
+        });
+
+        mSwipeRefreshLayout.setOnRefreshListener(() -> {
+            mWebView.reload();
+            mWebView.setWebViewClient(new WebViewClient() {
+                public void onPageFinished(WebView view, String url) {
+                    mSwipeRefreshLayout.setRefreshing(false);
+                }
+            });
         });
 
         mMenu.setOnClickListener(v -> {
