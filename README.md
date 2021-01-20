@@ -2,7 +2,7 @@
 
 ![](app/src/main/res/mipmap-xxxhdpi/ic_launcher.png)
 
-[![](https://img.shields.io/badge/News--Malayalam-v0.2-green)](https://play.google.com/store/apps/details?id=com.sunilpaulmathew.newsmalayalam)
+[![](https://img.shields.io/badge/News--Malayalam-v0.3-green)](https://play.google.com/store/apps/details?id=com.sunilpaulmathew.newsmalayalam)
 ![](https://img.shields.io/github/languages/top/sunilpaulmathew/NewsMalayalam)
 ![](https://img.shields.io/github/contributors/sunilpaulmathew/NewsMalayalam)
 ![](https://img.shields.io/github/license/sunilpaulmathew/NewsMalayalam)
